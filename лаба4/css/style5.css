@@ -1,0 +1,51 @@
+.cl2{
+    width: 0; height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #24375B;;
+}
+
+.cl3{
+    width: 100px;
+    height: 100px;
+    background-color: aqua; 
+    position: relative; 
+}
+
+.cl4{
+    width: 30px; height: 30px;
+    background: rgb(160, 158, 21);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+}
+
+.cl5{
+    background: #CD6D45;
+    height: 100px; width: 20px;
+    position: relative; left: 40px;}
+    .d24:after {
+    content: "";
+    height: 20px; width: 100px;
+    background: #CD6D45;
+    position: absolute; left: -40px; top: 40px;
+}
+
+.cl6{
+    width: 20px;
+    height: 40px;
+    background-color: rgb(73, 35, 9);
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.cl7{
+    width: 2px; height: 9px;
+    background: rgb(160, 158, 21);
+    border-radius: 50%;
+    position: absolute;
+    left: 16%;
+    top: 14px;
+}

@@ -1,0 +1,32 @@
+.sq{
+    width: 40vmax;
+    height: 40vmin;
+}
+
+.cl-1{
+    /* width: 0.5em;
+    height: 0.5em; */
+    background: green;
+    font-size: 55px;
+}
+
+.cl-2{
+    width: 0.5em;
+    height: 0.5em;
+    background: red;
+    font-size: 0.5em;
+}
+
+.cl-3{
+    width: 0.5em;
+    height: 0.5em;
+    background: rgb(0, 255, 0);
+    font-size: 0.5em;
+}
+
+.cl-4{
+    width: 0.5em;
+    height: 0.5em;
+    background: rgb(76, 0, 255);
+    font-size: 0.5em;
+}

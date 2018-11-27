@@ -1,0 +1,7 @@
+#box{
+    display: none;
+}
+
+#box:target{
+    display: block;
+}

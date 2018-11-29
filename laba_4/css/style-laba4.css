@@ -57,6 +57,7 @@ header {
 .knipka {
   display: flex;
   flex-direction: row;
+  margin-bottom: 23px;
 }
 
 .knipka1 {
@@ -88,7 +89,7 @@ header {
   border: 0px;
   width: 347px;
   height: 48px;
-  margin: 23px 17px 0 13px;
+  margin: 20px 17px 0 13px;
   padding: 5px;
   margin-bottom: 34px;
   background-color: #ff6600;
@@ -105,8 +106,12 @@ header {
   border: 0px;
   width: 347px;
   height: 40px;
-  margin: 23px 17px 0 13px;
+  margin: 15px 17px 0 13px;
   padding: 5px;
+}
+
+.code{
+  margin: 8px 17px 0 13px;
 }
 
 .text_reg {

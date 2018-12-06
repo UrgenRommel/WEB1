@@ -259,6 +259,11 @@ footer {
   width: 100%;
 }
 
+.mail{
+  color: white;
+  text-decoration: none;
+}
+
 .row {
   width: 100%;
   display: flex;

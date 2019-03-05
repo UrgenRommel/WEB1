@@ -26,7 +26,7 @@ function morse(slova) {
     X: "-..-",
     Y: "-.--",
     Z: "--..",
-    " ":"-...-.",
+    " ":"space",
 
     "1": ".----",
     "2": "..---",
@@ -59,7 +59,7 @@ function morse(slova) {
     "@": ".--.-."
   };
   var stro = "";
-  var splitwo = slova.split(" ");
+  var splitwo = slova.replace("   ", " space ").split(" ");
   for (var i in splitwo) {
     if (splitwo[i] != "") {
       for (var j in lib) {
@@ -71,5 +71,5 @@ function morse(slova) {
   }
   return stro;
 }
-var decoded = morse("--.. . -... .-. .-    -...-.    ..-. --- .-. . ...- . .-.");
+var decoded = morse("--.. . -... .-. .-            ..-. --- .-. . ...- . .-.");
 console.log(decoded);

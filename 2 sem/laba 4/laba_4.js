@@ -1,8 +1,10 @@
 document.getElementById("r4").addEventListener("click", clicked);
-function clicked() {
-  var in1 = document.getElementById("r1").value;
-  var in2 = document.getElementById("r2").value;
-  var in3 = document.getElementById("r3").value;
 
-  console.log(in1, in2, in3);
-}
+function clicked() {
+  var obj = {};
+  var inl = document.getElementsByTagName("input");
+  for (var i = 0; i < inl.length; i++) {
+    obj["text" + i] = inl[i].value;
+  }
+
+  console.log(obj);

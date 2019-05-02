@@ -3,11 +3,9 @@ var questApp = angular
   .config(function($routeProvider) {
     $routeProvider.when("/second", {
       templateUrl: "./second.html",
-      controller: "AnswerController"
     });
     $routeProvider.when("/ferst", {
       templateUrl: "./ferst.html",
-      controller: "AnswerController"
     });
-    $routeProvider.otherwise({ redirectTo: "/second" });
+    $routeProvider.otherwise({ redirectTo: "/r" });
   });

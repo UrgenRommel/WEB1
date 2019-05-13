@@ -25,7 +25,8 @@ app.get("/*", function(req, res) {
 app.post("/index", function(req, res) {
   console.log(req.body);
   
-  fs.appendFileSync("./public/data.json", JSON.stringify(req.body), err => {
+  fs.writeFile("./public/data.json", JSON.stringify(req.body), err => {
+  //fs.writeFile("./public/data.json", (req.body), err => {
     if (err) console.log(err);
     console.log("Successfully Written to File.");
   });

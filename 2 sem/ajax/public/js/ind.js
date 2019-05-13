@@ -1,38 +1,27 @@
 $("#btnforps").click(function(e) {
   e.preventDefault();
-  var str = {};
 
-  str[$("#inptut").attr("name")] = $("#inptut").val();
-  str[$("#inptat").attr("name")] = $("#inptat").val();
-  // console.log(str);
-
+  // str[$("#inptut").attr("name")] = $("#inptut").val();
+  // str[$("#inptat").attr("name")] = $("#inptat").val();
+  let var1 = $("#inptut").val();
+  
   $.getJSON("./data.json", function( data ) {
-    $.each( data, function( key, val ) {
-      console.log(key[0].val)
-      // key[0].val.push($("#inptut").val())
-      console.log( "<li id='" + key + "'>" + val + "</li>" );
+    let mas = data.ferst;
+    mas.push(var1);
+    data.name = mas;
+    // console.log(data.ferst);
+    // console.log(typeof data.ferst);
+    // console.log(data.ferst);
+    $.ajax({
+      type: "POST",
+      data: data,
+      url: "/index",
+      success: function(msg) {
+        alert("vu krasava");
+      },
+      fail: function(msg) {
+        alert("obijaeh " + msg);
+      }
     });
-    // data.ferst.push($("#inptut").val());
-    console.log(data);
   });
-  // console.log(json.responseText);
-  // json.responseText[0].push($("#inptut").val())
-  // console.log(json.responseText[0]);
-  // console.log(json.ferst);
-
-  // let user = JSON.stringify(str);
-  // alert(typeof str);
-
-  // $.ajax({
-  //   type: "POST",
-  //   data: str,
-  //   url: "/index",
-  //   dataType: "JSON",
-  //   success: function(msg) {
-  //     alert("vu krasava");
-  //   },
-  //   fail: function(msg) {
-  //     alert("obijaeh " + msg);
-  //   }
-  // });
 });
